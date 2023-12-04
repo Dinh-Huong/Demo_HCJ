@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'font1';
+}
+@font-face {
+    font-family: 'font1';
+    src: url(../fonts/OptimaNovaLTProRegular.otf);
+}
+.top_banner{
+    background-color: #897358;
+    color: #fff;
+}
+.bottom-banner{
+    position: relative;
+}
+.header_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    border-bottom: 1px solid #897358;
+}
+/* header  */
+.header{
+    background-color: #767676;
+}
+.main-menu  .menu-link{
+    position: relative;
+}
+.main-menu ul.navbar-nav{
+    width: 100%;
+    justify-content: space-between;
+}
+.country a{
+    color: #767676;
+}
+.logo{
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icon{
+    padding: 10px;
+}
+.icon i{
+    color: #767676;
+    padding: 15px;
+}
+@media screen and (max-width:992px) {
+    .header_wrap .icon div:first-child{
+        display: none;
+    }
+
+}
+
+
+/* main */
+
+.table .img-product {
+    width: 100px !important;
+}
+
+.table td {
+    border: 0 !important;
+} 
+
+.table tbody tr td {
+    vertical-align: middle !important;
+}
+
+.table tbody tr td:last-child button {
+    outline: 0;
+    border: 0;
+}
+
+@media screen and (max-width:550px) {
+    /* .main>div>.row>div:first-child{
+        border-right: 0 !important;
+    } */
+    .table tbody .name-product>p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+        width: 100px;
+    } 
+}
+
+
+
+/* footer */
+.contact a i{
+    color: #767676;
+}
+.contact a{
+    padding: 0 15px;
+}
+.body_item{    margin: 0 auto;
+}
+.body_item li{
+    list-style: none;  
+    padding: 5px 15px;
+}
+.body_item li a{
+    color: #767676;
+    text-decoration: none;
+    font-size: smaller;
+}
+.items a{
+    text-decoration: none;
+    color: #767676;
+    font-size: smaller;
+    padding-left: 15px;
+}
+

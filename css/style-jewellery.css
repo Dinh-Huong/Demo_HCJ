@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'font1';
+}
+@font-face {
+    font-family: 'font1';
+    src: url(../fonts/OptimaNovaLTProRegular.otf);
+}
+
+.top_banner{
+    background-color: #897358;
+    color: #fff;
+}
+
+.bottom-banner{
+    position: relative;
+}
+.header_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #767676; */
+    padding: 0px 25px;
+    border-bottom: 1px solid #897358;
+}
+/* header  */
+.header{
+    background-color: #767676;
+}
+
+.main-menu  .menu-link{
+    position: relative;
+}
+.main-menu ul.navbar-nav{
+    width: 100%;
+    justify-content: space-between;
+}
+.country a{
+    color: #767676;
+}
+.logo{
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icon{
+    padding: 10px;
+}
+.icon i{
+    color: #767676;
+    padding: 15px;
+}
+
+
+.icon>div:nth-child(2) {
+    z-index: 1000;
+}
+
+.box-cart-shopping:hover>.cart-shopping {
+    opacity: 1;
+    transform: scale(1) translateY(-40px);
+}
+
+.cart-shopping {
+    transition: all 0.3s linear;
+    opacity: 0;
+    transform: scale(0) translateY(-50px);
+    transform-origin: 80% 0;
+}
+
+.cart-shopping>div {
+    top: 50px;
+    right: 0;
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 0 6px black;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.cart-shopping>div::before {
+    content: '';
+    position: absolute;
+    top: -13px;
+    right: 10px;
+    height: 25px ;
+    width: 25px;
+    transform: rotate(45deg);
+    background-color: #fff;
+    box-shadow: 0 0 6px black;
+}
+
+.cart-shopping>div::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    height: 35px ;
+    width: 40px;
+    background-color: #fff;
+}
+
+.cart-shopping>div>.box-product>.item-product {
+    background-color: rgba(128, 128, 128, 0.109);
+    cursor: pointer;
+}
+
+.cart-shopping>div>.box-product>.item-product:hover {
+    opacity: 0.8;
+}
+
+.cart-shopping>div>.box-product>.item-product>span {
+    width: 50px !important;
+}
+
+.cart-shopping>div>.see-cart-shopping>a>button {
+    outline: 0;
+    border: 0;
+    color: #fff !important;
+    border-radius: 5px;
+    background-color: #897358;
+}
+
+
+
+/* main */
+.main-home{
+    width: 92%;
+    margin: 0 auto;
+}
+.img img{
+    object-fit: cover;
+}
+.heart>div img{
+    height: 271px;
+}
+.heart>div>a .card{
+    position: relative;
+    height: 450px;
+}
+.heart>div>a .card i{
+    font-size: 30px;
+    position: absolute;
+    color:#767676;
+    top: 10px;
+    left: 15px;
+}
+.product-gird button{
+    border-radius: 0;
+}
+.product-gird button:hover{
+    background-color: #897358;
+}
+.form-price{
+    padding: 15px;
+}
+.price>input{
+    border-radius: 0;
+    border: 1px solid #767676;
+    width: 100px;
+    padding: 5px 100px;
+
+}
+.price label{
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: all 0.3s linear;
+    color: #767676;
+}
+.price input:focus ~ label{
+    transform: translateY(-80%) scale(0.6);
+}
+
+.btn-apply button{
+    width: 100px;
+    justify-content:end;
+    border:1px solid #767676;
+    border-radius: 0;
+    color: #767676;
+}
+.btn-apply button:hover{
+    background-color: #897358;
+    color: #fff;
+}
+
+
+/* content */
+.content{
+    position: relative;
+}
+.content-inner{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+}
+.content-inner button{
+    border-radius: 0;
+    padding: 10px 30px;
+    background-color: #000;
+}
+.content-inner button:hover{
+    background-color: #897358;
+}
+
+/* footer */
+.footer_top{
+    background-color: rgba(137,115,88,.2);
+}
+.form-control{
+    width: 350px;
+    border-radius: 0;
+}
+.form-group{
+    display: flex;
+    align-items: center;
+}
+.form-group button{
+    background-color: #000;
+    border-radius: 0;
+    color: #fff;
+    width: 150px;
+}
+.form-group button:hover{
+    background-color: #897358;
+}
+.contact a i{
+    color: #767676;
+}
+.contact a{
+    padding: 0 15px;
+}
+.body_item{    margin: 0 auto;
+}
+.body_item li{
+    list-style: none;  
+    padding: 5px 15px;
+}
+.body_item li a{
+    color: #767676;
+    text-decoration: none;
+    font-size: smaller;
+}
+.items a{
+    text-decoration: none;
+    color: #767676;
+    font-size: smaller;
+    padding-left: 15px;
+}
+@media screen and (max-width:992px) {
+    .header_wrap .icon div:first-child{
+        display: none;
+    }
+    .form-control{
+        width: auto;
+        margin-bottom: 15px;
+    }
+    .content-inner>p{
+        display: none;
+
+    }
+    /* .content-inner button{
+        padding: 5px 10px;
+    } */
+
+}

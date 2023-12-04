@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'font1';
+}
+
+@font-face {
+    font-family: 'font1';
+    src: url(../fonts/OptimaNovaLTProRegular.otf);
+}
+
+.top_banner {
+    background-color: #897358;
+    color: #fff;
+}
+
+.bottom-banner {
+    position: relative;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #767676; */
+    padding: 0px 25px;
+    border-bottom: 1px solid #897358;
+}
+
+.header {
+    background-color: #767676;
+}
+
+.main-menu .menu-link {
+    position: relative;
+}
+
+.main-menu ul.navbar-nav {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.country a {
+    color: #767676;
+}
+
+.logo {
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon {
+    padding: 10px;
+}
+
+.icon i {
+    color: #767676;
+    padding: 15px;
+}
+@media screen and (max-width:992px) {
+    .header_wrap .icon div{
+        display: none;
+    }
+
+}
+
+
+
+/* main */
+.product-home {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.product-home .card {
+    position: relative;
+}
+
+.product-home .card i {
+    font-size: 30px;
+    position: absolute;
+    color: #767676;
+    top: 10px;
+    left: 15px;
+}
+
+.form-user {
+    border-right: 1px solid #897358;
+    width: 50%;
+}
+
+.form-user>div>button {
+    width: 250px;
+    padding: 15px;
+    outline: 0;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.info {
+    top: 110px !important;
+    height: 100% !important;
+}
+
+.box-content>div div:nth-child(2n+1) {
+    background-color: #ded8d8;
+
+}
+
+.box-content>div div:nth-child(2n) {
+    background-color: #eeeeee;
+}
+
+.details2 {
+    display: none;
+}
+
+/* footer */
+.footer_top {
+    background-color: rgba(137, 115, 88, .2);
+}
+
+.form-control {
+    width: 350px;
+    border-radius: 0;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group button {
+    background-color: #000;
+    border-radius: 0;
+    color: #fff;
+    width: 150px;
+}
+
+.form-group button:hover {
+    background-color: #897358;
+}
+
+.contact a i {
+    color: #767676;
+}
+
+.contact a {
+    padding: 0 15px;
+}
+
+.body_item {
+    margin: 0 auto;
+}
+
+.body_item li {
+    list-style: none;
+    padding: 5px 15px;
+}
+
+.body_item li a {
+    color: #767676;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+.items a {
+    text-decoration: none;
+    color: #767676;
+    font-size: smaller;
+    padding-left: 15px;
+}

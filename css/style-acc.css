@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'font1';
+}
+@font-face {
+    font-family: 'font1';
+    src: url(../fonts/OptimaNovaLTProRegular.otf);
+}
+.top_banner{
+    background-color: #897358;
+    color: #fff;
+}
+.bottom-banner{
+    position: relative;
+}
+.header_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #767676; */
+    padding: 0px 25px;
+    border-bottom: 1px solid #897358;
+}
+/* header  */
+.header{
+    background-color: #767676;
+}
+
+.main-menu  .menu-link{
+    position: relative;
+}
+.main-menu ul.navbar-nav{
+    width: 100%;
+    justify-content: space-between;
+}
+.country a{
+    color: #767676;
+}
+.logo{
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icon{
+    padding: 10px;
+}
+.icon i{
+    color: #767676;
+    padding: 15px;
+}
+@media screen and (max-width:992px) {
+    .header_wrap .icon div:first-child{
+        display: none;
+    }
+
+}
+.icon>div:nth-child(2) {
+    z-index: 1000;
+}
+
+.box-cart-shopping:hover>.cart-shopping {
+    opacity: 1;
+    transform: scale(1) translateY(-40px);
+}
+
+.cart-shopping {
+    transition: all 0.3s linear;
+    opacity: 0;
+    transform: scale(0) translateY(-50px);
+    transform-origin: 80% 0;
+}
+
+.cart-shopping>div {
+    top: 50px;
+    right: 0;
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 0 6px black;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.cart-shopping>div::before {
+    content: '';
+    position: absolute;
+    top: -13px;
+    right: 10px;
+    height: 25px ;
+    width: 25px;
+    transform: rotate(45deg);
+    background-color: #fff;
+    box-shadow: 0 0 6px black;
+}
+
+.cart-shopping>div::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    height: 35px ;
+    width: 40px;
+    background-color: #fff;
+}
+
+.cart-shopping>div>.box-product>.item-product {
+    background-color: rgba(128, 128, 128, 0.109);
+    cursor: pointer;
+}
+
+.cart-shopping>div>.box-product>.item-product:hover {
+    opacity: 0.8;
+}
+
+.cart-shopping>div>.box-product>.item-product>span {
+    width: 50px !important;
+}
+
+.cart-shopping>div>.see-cart-shopping>a>button {
+    outline: 0;
+    border: 0;
+    color: #fff !important;
+    border-radius: 5px;
+    background-color: #897358;
+}
+
+
+/* main */
+.form{
+    background-color: #f8f8f9;
+    padding: 15px;
+    margin-top:32px ;
+}
+.form-group input{
+    padding: 10px 150px 5px 10px;
+    border: 1px solid #897358;
+}
+.form-group label{
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transition: all 0.3s linear;
+    color: #767676;
+}
+/* .form-group input:focus~ label{
+    transform: translateY(-80%) scale(0.6);
+    transform-origin: 0 0;
+} */
+.field-group{
+    justify-content: space-between;
+    display: flex;
+}
+.field-group a, .field-group label {
+    color: #767676;
+}
+.button button{
+    padding: 10px 100px;
+    margin-top: 15px;
+    border-radius: 0;
+    background-color: #000;
+}
+.button button:hover{
+    background-color: #897358;
+}
+.gg button{
+    padding: 8px 50px;
+    margin-top: 15px;
+    border-radius: 0;
+}
+.gg button:hover{
+    background-color: #897358;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #897358;
+    padding: 15px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.privacy {
+    margin-top: 25px;
+}
+.privacy a{
+    color: #767676;
+}
+.contact p, .contact p>a{
+    color: #767676;
+}
+/* footer */
+.contact a i{
+    color: #767676;
+}
+.contact a{
+    padding: 0 15px;
+}
+.body_item{    margin: 0 auto;
+}
+.body_item li{
+    list-style: none;  
+    padding: 5px 15px;
+}
+.body_item li a{
+    color: #767676;
+    text-decoration: none;
+    font-size: smaller;
+}
+.items a{
+    text-decoration: none;
+    color: #767676;
+    font-size: smaller;
+    padding-left: 15px;
+}
+
+@media screen and (max-width:992px) {
+    .left{
+        border-right: 0;
+        border-bottom: 1px solid #897358;
+        margin-bottom:15px;
+        
+    }
+}
